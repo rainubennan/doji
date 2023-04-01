@@ -47,11 +47,9 @@ class _ShopListScreenState extends State<ShopListScreen> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      shopsList.add({
-                        'name': shopName.text,
-                        'Requirements': List<RequirementsModel>
-                      });
-
+                      shopsList
+                          .add({'name': shopName.text, 'Requirements': []});
+                      print(shopsList);
                       setState(() {});
 
                       Navigator.pop(context);

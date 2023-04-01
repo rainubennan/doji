@@ -61,7 +61,7 @@ class _AddRequirementsScreenState extends State<AddRequirementsScreen> {
           ),
           child: Icon(Icons.add),
         ),
-        body: requirementsList == null
+        body: shopsList[widget.shopIndex]['Requirements'] == null
             ? Center(
                 child: Text('Add items'),
               )
